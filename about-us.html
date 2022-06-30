@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lit Agency</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="sign">
+        <div class="sign-container">
+            <div class="sign-in-container active">
+                <h1 class="sign__header">Вход в кабинет</h1>
+                <form class="sign__form">
+                    <input type="text" class="sign__input" placeholder="E-mail" required>
+                    <input type="text" class="sign__input sign__input_last" placeholder="Пароль" required>
+                    <a href="" class="sign__forgot">Забыли пароль?</a>
+                    <input type="checkbox" class="sign__checkbox" id="sign__checkbox1" required>
+                    <label class="sign__label" for='sign__checkbox1'>
+                        <p class="sign__agreetext">Согласие на обработку персональных данных</p>
+                    </label>
+                    <a href="" class="sign__href" id="sign-up-href">Зарегистрироваться</a>
+                    <button class="sign__button">Войти</button>
+                </form>
+            </div>
+            <div class="sign-up-container">
+                <h1 class="sign__header">Регистрация</h1>
+                <form class="sign__form">
+                    <input type="text" class="sign__input" placeholder="*Имя и фамилия" required>
+                    <input type="text" class="sign__input" placeholder="Пароль" required>
+                    <input type="text" class="sign__input sign__input_last" placeholder="E-mail" required>
+                    <input type="checkbox" class="sign__checkbox" id="sign__checkbox2" required>
+                    <label class="sign__label sign__label_mt" for='sign__checkbox2'>
+                        <p class="sign__agreetext">Согласие на обработку персональных данных</p>
+                    </label>
+                    <a href="" class="sign__href" id="sign-in-href">Авторизоваться</a>
+                    <button class="sign__button">Зарегистрироваться</button>
+                </form>
+            </div>
+            <div class="forgot-container">
+                <h1 class="sign__header">Забыли пароль</h1>
+                <form class="sign__form">
+                    <input type="text" class="sign__input" placeholder="E-mail" required>
+                    <input type="checkbox" class="sign__checkbox" id="sign__checkbox2" required>
+                    <button class="sign__button">Востановить пароль</button>
+                </form>
+            </div>
+            <div class="sign__close">&#10006;</div>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="menu">
+            <div class="wrap">
+                <div class="menu-top">
+                    <div class="menu__secondary__href">
+                        <a href="" class="menu__secondary__href__item">АГЕНТСТВО</a>
+                        <a href="" class="menu__secondary__href__item">НОВОСТИ</a>
+                        <a href="" class="menu__secondary__href__item">КОНТАКТЫ</a>
+                    </div>
+                    <div class="menu__language">
+                        <a href="" class="sign__in_button">ВОЙТИ</a>
+                        <a href="" class="language__switch"><img src="img/ru_lang.svg" alt=""></a>
+                        <a href="" class="language__switch"><img src="img/en_lang.svg" alt=""></a>
+                        <a href="" class="language__switch"><img src="img/ch_lang.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="menu-bottom">
+                    <div class="menu__primary__href">
+                        <a href="" class="menu__primary__href__item">КНИГИ</a>
+                        <a href="" class="menu__primary__href__item">АВТОРЫ</a>
+                        <a href="" class="menu__primary__href__item">ИЛЛЮСТРАТОРЫ</a>
+                        <a href="" class="menu__primary__href__item">ПАРТНЕРЫ</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="menu-mobile-block">
+            <a href="" class="menu-mobile-main-href">КНИГИ</a>
+            <a href="" class="menu-mobile-main-href">АВТОРЫ</a>
+            <a href="" class="menu-mobile-main-href">ИЛЛЮСТРАТОРЫ</a>
+            <a href="" class="menu-mobile-main-href">ПАРТНЕРЫ</a>
+            <a href="" class="menu-mobile-secondary-href menu-mobile-secondary-href_first">АГЕНТСТВО</a>
+            <a href="" class="menu-mobile-secondary-href">НОВОСТИ</a>
+            <a href="" class="menu-mobile-secondary-href">КОНТАКТЫ</a>
+            <a href="" class="sign-in-mobile">ВОЙТИ</a>
+            <div class="menu__language menu__language_mobile">
+                <a href="" class="sign__in_button">ВОЙТИ</a>
+                <a href="" class="language__switch"><img src="img/ru_lang.svg" alt=""></a>
+                <a href="" class="language__switch"><img src="img/en_lang.svg" alt=""></a>
+                <a href="" class="language__switch"><img src="img/ch_lang.svg" alt=""></a>
+            </div>
+            <div class="mobile-menu__social__media">
+                <a href="">
+                    <svg class="contacts-info__icon contacts-info__icon_fb">
+                        <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="contacts-info__icon contacts-info__icon_inst">
+                        <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="mobile-menu__social__email">
+                <a href="">
+                    <svg class="footer__chat">
+                        <use xlink:href="img/sprite.svg#message"></use>
+                    </svg>
+                </a>
+            </div>
+            <a href="mailto:ask@lit.agency" class="mobile-menu-email">ask@lit.agency</a>
+        </div>
+        <div class="menu-mobile">
+            <div class="menu-mobile__button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu__language">
+                <a href="" class="sign__in_button">ВОЙТИ</a>
+                <a href="" class="language__switch"><img src="img/ru_lang.svg" alt=""></a>
+                <a href="" class="language__switch" id="second_lang"><img src="img/en_lang.svg" alt=""></a>
+                <a href="" class="language__switch" id="third_lang"><img src="img/ch_lang.svg" alt=""></a>
+            </div>
+        </div>
+        <img src="img/lit_logo.svg" alt="" class="menu__logo">
+        <div class="wrap">
+            <div class="books-page-header">
+                <h2 class="section__header">Агенство</h2>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <div class="about-us-page-container">
+            <div class="about-us-page-left">
+                <h2 class="about-us-page-title">КНИГИ ЗАМЕЧАТЕЛЬНЫХ АВТОРОВ И ИЛЛЮСТРАТОРОВ ИЗ РОССИИ И НЕ ТОЛЬКО</h2>
+                <p class="about-us-page-info">Lit.Agency – московское литературное агентство, специализирующееся на качественной детской книге-картинке. Представляет широкий круг отмеченных наградами авторов, пишущих книги для детей, и художников, иллюстрирующих эти книги.</p>
+                <p class="about-us-page-info">У нас можно найти книги современных писателей и классические произведения с новыми необычными иллюстрациями. Одни книги вносят сказку в нашу повседневную жизнь, другие переносят читателя на столетия назад. Все книги будут интересны не только детям, но и взрослым. Увлекательные энциклопедии ответят на вопросы юных «почемучек».</p>
+                <p class="about-us-page-info">Наша цель – познакомить иностранцев с книгами российских авторов и классическими историями со всего мира с завораживающими иллюстрациями русских и украинских художников.</p>
+            </div>
+            <div class="about-us-page-right">
+                <p class="about-us-page-header-bold">Мы занимаемся правами на публикацию в мире:</p>
+                <ul class="about-us-page-ul">
+                    <li class="about-us-page-ul__item">Сказок;</li>
+                    <li class="about-us-page-ul__item">Сборников рассказов;</li>
+                    <li class="about-us-page-ul__item">Некрупных повестей;</li>
+                    <li class="about-us-page-ul__item">Детских энциклопедий.</li>
+                </ul>
+                <p class="about-us-page-info">Lit.Agency существует с 2010 года. Основатель – Антон Пескишев, юрист по интеллектуальной собственности и авторскому праву. У Антона многолетний опыт работы в продажах международных прав на иллюстрированные детские книги. </p>
+                <p class="about-us-page-info">У агентства хорошая репутация как среди авторов и художников, так и среди издателей. Мы гордимся тем, что Lit.Agency выбрали выдающиеся современные российские писатели и иллюстраторы. Мы постоянно ищем новые таланты, интересные истории и необычные рисунки.</p>
+                <p class="about-us-page-info">Мы ориентируемся на международный рынок и посещаем ярмарки прав в Болонье и во Франкфурте, чтобы презентовать их работы международным издателям. Lit.Agency играет роль связующего звена между творческими личностями и издательствами, которые используют результаты труда.</p>
+            </div>
+        </div>
+        <div class="about-us-page-container">
+            <div class="about-us-page-left about-us-page-left_flex">
+                <div class="about-us-page-left-left">
+                    <p class="about-us-page-header">Преимущества при работе с Lit.Agency</p>
+                    <ul class="about-us-page-ul">
+                        <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Мы хорошо ориентируемся в книжном сообществе авторов и иллюстраторов.</li>
+                        <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Защищаем самые уязвимые стороны договора – творческие личности (авторов и иллюстраторов). Это наша основная задача.</li>
+                        <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Мы даём издательству возможность работать с популярными писателями и художниками.</li>
+                        <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Помогаем агентству найти нужного автора или его наследников и купить права.</li>
+                        <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Мы берем на себя все хлопоты, связанные с покупкой и продажей авторских прав на детские книги, осуществляем контроль заказов, обеспечиваем чистоту контрактов.</li>
+                    </ul>
+                </div>
+                <div class="about-us-page-left-right">
+                    <p class="about-us-page-header">Услуги</p>
+                    <ul class="about-us-page-ul">
+                        <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Оформление прав на издание книги за границей.</li>
+                        <li class="about-us-page-ul__item about-us-page-ul__item__smaller">При покупке прав тандем автор + иллюстратор неделим, т.е. вы приобретаете права на издание в своей стране и на своем языке уже готовой книги с иллюстрациями.</li>
+                        <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Поиск издательства, автора и иллюстратора.</li>
+                        <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Консультации для издателей, интересующихся русскими писателями или художниками.</li>
+                        <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Предоставление биографий всех авторов и иллюстраторов, с которыми мы работаем.</li>
+                        <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Организация и выполнение заказов на тематические иллюстрации к книгам издательства.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-us-page-right">
+                <p class="about-us-page-header">Помимо этого, Lit.Agency занимается:</p>
+                <ul class="about-us-page-ul">
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Книгами на заказ;</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Производством календарей и открыток и иллюстрациями;</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Помощью продажи прав на ваши книги в России и Китае;</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Организацией поездок и интервью для авторов и иллюстраторов за границу. Так, например, была организована поездка Олейникова по приглашению в Китай;</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Проведением выставок картин иллюстраторов, с которыми мы работаем. Например, была организована выставка Олейникова в Пекине.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="about-us-page-container">
+            <div class="about-us-page-left">
+                <p class="about-us-page-header-bold">Мы работаем с лучшими детскими писателями и художниками. С некоторыми из них – эксклюзивно. Мы горды тем, что представляем интересы признанных российских авторов и иллюстраторов, таких как:</p>
+            </div>
+            <div class="about-us-page-right">
+                <p class="about-us-page-info about-us-page-info_up about-us-page-info_mt">Игорь Олейников</p>
+                <p class="about-us-page-info about-us-page-info_bold about-us-page-info_mt">Лауреат премии Ханса Кристиана Андерсена;</p>
+
+                <p class="about-us-page-info about-us-page-info_up">Андрей Усачев</p>
+                <p class="about-us-page-info about-us-page-info_bold about-us-page-info_mt">Один из классиков русской детской литературы;</p>
+
+                <p class="about-us-page-info about-us-page-info_up">Михаил Бартенев;</p>
+                <p class="about-us-page-info about-us-page-info_up">Мария Михальская;</p>
+                <p class="about-us-page-info about-us-page-info_up">Галя Зинько;</p>
+                <p class="about-us-page-info about-us-page-info_up">Евгений Антоненков;</p>
+                <p class="about-us-page-info about-us-page-info_up">Марина Москвина;</p>
+                <p class="about-us-page-info about-us-page-info_up">Юлия Гукова;</p>
+                <p class="about-us-page-info about-us-page-info_up">Леонид Тишков;</p>
+                <p class="about-us-page-info">и другие</p>
+            </div>
+        </div>
+        <div class="about-us-page-container">
+            <div class="about-us-page-left">
+                <p class="about-us-page-header">Когда к нам обращаются</p>
+                <p class="about-us-page-info">Литературные агентства и издатели из разных уголков мира обращаются к нам, когда хотят издать зарубежную книгу в своей стране.</p>
+                <p class="about-us-page-info">Также к нам обращаются за поиском иллюстраторов для детских книг своей страны.</p>
+            </div>
+            <div class="about-us-page-right">
+                <p class="about-us-page-header">Наши партнеры</p>
+
+                <p class="about-us-page-info">Партнеры Lit.Agency – издательства, агенты и агентства по всему миру. Среди них:</p>
+
+                <ul class="about-us-page-ul about-us-page-ul_mt">
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Россия: Росмэн, АСТ и др.;</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Украина: Издательский дом Школа, Перо (при Росмэн);</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Китай,</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Япония,</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Корея,</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Италия,</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">США,</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Дания,</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Швеция,</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Словения,</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Голландия,</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Румыния,</li>
+                    <li class="about-us-page-ul__item about-us-page-ul__item__smaller">Израиль.</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="footer"> 
+            <div class="footer-container">
+                <div class="footer__top__menu">
+                    <a href="" class="footer__top__menu__item">Книги</a>
+                    <a href="" class="footer__top__menu__item">Авторы</a>
+                    <a href="" class="footer__top__menu__item">Иллюстраторы</a>
+                    <a href="" class="footer__top__menu__item">Партнеры</a>
+                </div>
+                <div class="footer__bottom__menu">
+                    <a href="" class="footer__bottom__menu__item">Агенство</a>
+                    <a href="" class="footer__bottom__menu__item">Новости<a>
+                    <a href="" class="footer__bottom__menu__item">Контакты</a>
+                </div>
+
+                <img src="img/lit_logo.svg" alt="" class="footer__logo">
+
+                <a href="" class="menu-mobile-main-href menu-mobile-main-href_ft">КНИГИ</a>
+                <a href="" class="menu-mobile-main-href menu-mobile-main-href_ft">АВТОРЫ</a>
+                <a href="" class="menu-mobile-main-href menu-mobile-main-href_ft">ИЛЛЮСТРАТОРЫ</a>
+                <a href="" class="menu-mobile-main-href menu-mobile-main-href_ft">ПАРТНЕРЫ</a>
+                <a href="" class="menu-mobile-secondary-href menu-mobile-secondary-href_first  menu-mobile-secondary-href_ft">АГЕНТСТВО</a>
+                <a href="" class="menu-mobile-secondary-href menu-mobile-secondary-href_ft">НОВОСТИ</a>
+                <a href="" class="menu-mobile-secondary-href menu-mobile-secondary-href_ft">КОНТАКТЫ</a>
+                <a href="" class="sign-in-mobile sign-in-mobile_footer">ВОЙТИ</a>
+                <div class="menu__language menu__language_mobile">
+                    <a href="" class="sign__in_button">ВОЙТИ</a>
+                    <a href="" class="language__switch"><img src="img/ru_lang.svg" alt=""></a>
+                    <a href="" class="language__switch"><img src="img/en_lang.svg" alt=""></a>
+                    <a href="" class="language__switch"><img src="img/ch_lang.svg" alt=""></a>
+                </div>
+                <div class="mobile-menu__social__media">
+                    <a href="">
+                        <svg class="contacts-info__icon contacts-info__icon_fb">
+                            <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg class="contacts-info__icon contacts-info__icon_inst">
+                            <use xlink:href="img/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="mobile-menu__social__email">
+                    <a href="">
+                        <svg class="footer__chat">
+                            <use xlink:href="img/sprite.svg#message"></use>
+                        </svg>
+                    </a>
+                </div>
+                <a href="mailto:ask@lit.agency" class="mobile-menu-email">ask@lit.agency</a>
+            </div>
+            <svg class="footer__chat footer__chat_bt">
+                <use xlink:href="img/sprite.svg#message"></use>
+            </svg>
+            <p class="footer_rights">© 2020 LIT.AGENCY</p>
+        </footer>
+
+    </div>
+
+    <script src = "js/general.js"></script>
+
+</body>
+</html>

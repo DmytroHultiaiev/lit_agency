@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lit Agency</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="sign">
+        <div class="sign-container">
+            <div class="sign-in-container active">
+                <h1 class="sign__header">Вход в кабинет</h1>
+                <form class="sign__form">
+                    <input type="text" class="sign__input" placeholder="E-mail" required>
+                    <input type="text" class="sign__input sign__input_last" placeholder="Пароль" required>
+                    <a href="" class="sign__forgot">Забыли пароль?</a>
+                    <input type="checkbox" class="sign__checkbox" id="sign__checkbox1" required>
+                    <label class="sign__label" for='sign__checkbox1'>
+                        <p class="sign__agreetext">Согласие на обработку персональных данных</p>
+                    </label>
+                    <a href="" class="sign__href" id="sign-up-href">Зарегистрироваться</a>
+                    <button class="sign__button">Войти</button>
+                </form>
+            </div>
+            <div class="sign-up-container">
+                <h1 class="sign__header">Регистрация</h1>
+                <form class="sign__form">
+                    <input type="text" class="sign__input" placeholder="*Имя и фамилия" required>
+                    <input type="text" class="sign__input" placeholder="Пароль" required>
+                    <input type="text" class="sign__input sign__input_last" placeholder="E-mail" required>
+                    <input type="checkbox" class="sign__checkbox" id="sign__checkbox2" required>
+                    <label class="sign__label sign__label_mt" for='sign__checkbox2'>
+                        <p class="sign__agreetext">Согласие на обработку персональных данных</p>
+                    </label>
+                    <a href="" class="sign__href" id="sign-in-href">Авторизоваться</a>
+                    <button class="sign__button">Зарегистрироваться</button>
+                </form>
+            </div>
+            <div class="forgot-container">
+                <h1 class="sign__header">Забыли пароль</h1>
+                <form class="sign__form">
+                    <input type="text" class="sign__input" placeholder="E-mail" required>
+                    <input type="checkbox" class="sign__checkbox" id="sign__checkbox2" required>
+                    <button class="sign__button">Востановить пароль</button>
+                </form>
+            </div>
+            <div class="sign__close">&#10006;</div>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="menu">
+            <div class="wrap">
+                <div class="menu-top">
+                    <div class="menu__secondary__href">
+                        <a href="" class="menu__secondary__href__item">АГЕНТСТВО</a>
+                        <a href="" class="menu__secondary__href__item">НОВОСТИ</a>
+                        <a href="" class="menu__secondary__href__item">КОНТАКТЫ</a>
+                    </div>
+                    <div class="menu__language">
+                        <a href="" class="sign__in_button">ВОЙТИ</a>
+                        <a href="" class="language__switch"><img src="img/ru_lang.svg" alt=""></a>
+                        <a href="" class="language__switch"><img src="img/en_lang.svg" alt=""></a>
+                        <a href="" class="language__switch"><img src="img/ch_lang.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="menu-bottom">
+                    <div class="menu__primary__href">
+                        <a href="" class="menu__primary__href__item">КНИГИ</a>
+                        <a href="" class="menu__primary__href__item active">АВТОРЫ</a>
+                        <a href="" class="menu__primary__href__item">ИЛЛЮСТРАТОРЫ</a>
+                        <a href="" class="menu__primary__href__item">ПАРТНЕРЫ</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="menu-mobile-block">
+            <a href="" class="menu-mobile-main-href">КНИГИ</a>
+            <a href="" class="menu-mobile-main-href">АВТОРЫ</a>
+            <a href="" class="menu-mobile-main-href">ИЛЛЮСТРАТОРЫ</a>
+            <a href="" class="menu-mobile-main-href">ПАРТНЕРЫ</a>
+            <a href="" class="menu-mobile-secondary-href menu-mobile-secondary-href_first">АГЕНТСТВО</a>
+            <a href="" class="menu-mobile-secondary-href">НОВОСТИ</a>
+            <a href="" class="menu-mobile-secondary-href">КОНТАКТЫ</a>
+            <a href="" class="sign-in-mobile">ВОЙТИ</a>
+            <div class="menu__language menu__language_mobile">
+                <a href="" class="sign__in_button">ВОЙТИ</a>
+                <a href="" class="language__switch"><img src="img/ru_lang.svg" alt=""></a>
+                <a href="" class="language__switch"><img src="img/en_lang.svg" alt=""></a>
+                <a href="" class="language__switch"><img src="img/ch_lang.svg" alt=""></a>
+            </div>
+            <div class="mobile-menu__social__media">
+                <a href="">
+                    <svg class="contacts-info__icon contacts-info__icon_fb">
+                        <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="contacts-info__icon contacts-info__icon_inst">
+                        <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="mobile-menu__social__email">
+                <a href="">
+                    <svg class="footer__chat">
+                        <use xlink:href="img/sprite.svg#message"></use>
+                    </svg>
+                </a>
+            </div>
+            <a href="mailto:ask@lit.agency" class="mobile-menu-email">ask@lit.agency</a>
+        </div>
+        <div class="menu-mobile">
+            <div class="menu-mobile__button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu__language">
+                <a href="" class="sign__in_button">ВОЙТИ</a>
+                <a href="" class="language__switch"><img src="img/ru_lang.svg" alt=""></a>
+                <a href="" class="language__switch" id="second_lang"><img src="img/en_lang.svg" alt=""></a>
+                <a href="" class="language__switch" id="third_lang"><img src="img/ch_lang.svg" alt=""></a>
+            </div>
+        </div>
+        <img src="img/lit_logo.svg" alt="" class="menu__logo">
+        <div class="wrap">
+            <div class="books-page-header">
+                <h2 class="section__header">Авторы</h2>
+                <div class="pagination-href">
+                    <a href="" class="pagination__item">ВСЕ АВТОРЫ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <section class="cart-author-about">
+            <button class="cart-author-about__button cart-author-about__button_left">
+                <svg class="slick__left">
+                    <use xlink:href="img/sprite.svg#left__arrow"></use>
+                </svg>
+            </button>
+            <div class="cart-author-about__short__info">
+                <img src="img/oleinikov_photo.jpeg" alt="" class="cart-author-about__img">
+                <div class="cart-author-about__short__info__text">
+                    <p class="cart-author-about__name">ДЖОЭЛЬ ЧАНДЛЕР ХАРРИС</p>
+                    <p class="cart-author-about__years">1845(48) – 1908</p>
+                    <p class="cart-author-about__prof">ЖУРНАЛИСТ, ПИСАТЕЛЬ, ФОЛЬКЛОРИСТ</p>
+                    <p class="cart-author-about__awards">Место в зале славы писателей штата Джорджия (2000)</p>
+                    <div class="cart-author-about__country">США</div>
+                </div>
+            </div>
+            <p class="cart-author-about__desc">Американский журналист, писатель и фольклорист, наиболее известный своими юмористическими историями о Братце Кролике, Братце Лисе и остальных героях под названием «Сказки дядюшки Римуса». Эти сказки – бесценная коллекция афро-американского фольклора темнокожих рабов южных плантаций США, подкупающая забавными сюжетами, колоритными персонажами, авантюрным и в то же время поучительным настроем, афористичной житейской мудростью и удивительно самобытным языком.</p>
+            <button class="cart-author-about__button cart-author-about__button_right">
+                <svg class="slick__right">
+                    <use xlink:href="img/sprite.svg#right__arrow"></use>
+                </svg>
+            </button>
+        </section>
+
+        <section class="cart-author-tabs">
+            <div class="cart-author-tabs__href">
+                <buttton class="cart-author-tabs__href__item active" data-category-tabs='books'>КНИГИ</buttton>
+                <buttton class="cart-author-tabs__href__item" data-category-tabs='illustrations'>ИЛЛЮСТРАЦИИ</buttton>
+                <buttton class="cart-author-tabs__href__item" data-category-tabs='biography'>БИОГРАФИЯ</buttton>
+                <buttton class="cart-author-tabs__href__item" data-category-tabs='awards'>НАГРАДЫ</buttton>
+            </div>
+            <div class="cart-author-tabs__item active" data-category-tabs='books'>
+                <h2 class="cart-author-tabs__header">КНИГИ АВТОРА</h2> 
+                <div class="cart-author-book-container">
+                    <div class="book-container__item cart-author-book-container__item" data-index-books='book1'>
+                        <a href="">
+                            <div class="book-container__info">
+                                <img src="img/first_book.png" alt="" class="book-container__img" data-index-books='book1'>
+                                <div class="book-container__desc" data-index-books='book1'>
+                                    <div class="book-container__desc__top">
+                                        <p class="book-container__age">0+</p>
+                                        <p class="book-container__serious"><span>Серия </span>4 книги</p>
+                                        <p class="book-container__ildesc"><span>Иллюстрации</p>
+                                        <p class="book-container__ilauthor"><span>ЕВГЕНИЙ АНТОНЕНКОВ</p>
+                                        <p class="book-container__hoverdesc">Продолжение книги «Умная собачка Соня». Стихи и песни, которые маленькая собачка записывала в своем дневнике.</p>
+                                    </div>
+                                    <div class="book-container__desc__bottom">
+                                        <p class="book-container__madein"><span>ИЗДАНА В: </span>РОССИЯ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="book-container__name">СКАЗКИ ДЯДЮШКИ РИМУСА. ПРО МАЛЕНЬКИХ КРОЛЬЧАТ</p>
+                            <p class="book-container__author">ДЖОЭЛЬ ЧАНДЛЕР ХАРРИС</p>
+                            <p class="book-container__tags">СТИХИ, ПЕСНИ, РАССКАЗЫ, ИСТОРИЧЕСКИЙ, КЛАССИЧЕСКАЯ ЛИТЕРАТУРА</p>
+                            <a class="book-container__more" href="" data-index-books='book1'>ПОДРОБНЕЕ</a>
+                        </a>
+                    </div>
+                    <div class="book-container__item cart-author-book-container__item" data-index-books='book2'>
+                        <a href="">
+                            <div class="book-container__info">
+                                <img src="img/first_book.png" alt="" class="book-container__img" data-index-books='book2'>
+                                <div class="book-container__desc" data-index-books='book2'>
+                                    <div class="book-container__desc__top">
+                                        <p class="book-container__age">0+</p>
+                                        <p class="book-container__serious"><span>Серия </span>4 книги</p>
+                                        <p class="book-container__ildesc"><span>Иллюстрации</p>
+                                        <p class="book-container__ilauthor"><span>ЕВГЕНИЙ АНТОНЕНКОВ</p>
+                                        <p class="book-container__hoverdesc">Продолжение книги «Умная собачка Соня». Стихи и песни, которые маленькая собачка записывала в своем дневнике.</p>
+                                    </div>
+                                    <div class="book-container__desc__bottom">
+                                        <p class="book-container__madein"><span>ИЗДАНА В: </span>РОССИЯ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="book-container__name">СКАЗКИ ДЯДЮШКИ РИМУСА. ПРО МАЛЕНЬКИХ КРОЛЬЧАТ</p>
+                            <p class="book-container__author">ДЖОЭЛЬ ЧАНДЛЕР ХАРРИС</p>
+                            <p class="book-container__tags">СТИХИ, ПЕСНИ, РАССКАЗЫ, ИСТОРИЧЕСКИЙ, КЛАССИЧЕСКАЯ ЛИТЕРАТУРА</p>
+                            <a class="book-container__more" href="" data-index-books='book2'>ПОДРОБНЕЕ</a>
+                        </a>
+                    </div>
+                    <div class="book-container__item cart-author-book-container__item" data-index-books='book3'>
+                        <a href="">
+                            <div class="book-container__info">
+                                <img src="img/first_book.png" alt="" class="book-container__img" data-index-books='book3'>
+                                <div class="book-container__desc" data-index-books='book3'>
+                                    <div class="book-container__desc__top">
+                                        <p class="book-container__age">0+</p>
+                                        <p class="book-container__serious"><span>Серия </span>4 книги</p>
+                                        <p class="book-container__ildesc"><span>Иллюстрации</p>
+                                        <p class="book-container__ilauthor"><span>ЕВГЕНИЙ АНТОНЕНКОВ</p>
+                                        <p class="book-container__hoverdesc">Продолжение книги «Умная собачка Соня». Стихи и песни, которые маленькая собачка записывала в своем дневнике.</p>
+                                    </div>
+                                    <div class="book-container__desc__bottom">
+                                        <p class="book-container__madein"><span>ИЗДАНА В: </span>РОССИЯ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="book-container__name">СКАЗКИ ДЯДЮШКИ РИМУСА. ПРО МАЛЕНЬКИХ КРОЛЬЧАТ</p>
+                            <p class="book-container__author">ДЖОЭЛЬ ЧАНДЛЕР ХАРРИС</p>
+                            <p class="book-container__tags">СТИХИ, ПЕСНИ, РАССКАЗЫ, ИСТОРИЧЕСКИЙ, КЛАССИЧЕСКАЯ ЛИТЕРАТУРА</p>
+                            <a class="book-container__more" href="" data-index-books='book3'>ПОДРОБНЕЕ</a>
+                        </a>
+                    </div>
+                    <div class="book-container__item cart-author-book-container__item" data-index-books='book4'>
+                        <a href="">
+                            <div class="book-container__info">
+                                <img src="img/first_book.png" alt="" class="book-container__img" data-index-books='book4'>
+                                <div class="book-container__desc" data-index-books='book4'>
+                                    <div class="book-container__desc__top">
+                                        <p class="book-container__age">0+</p>
+                                        <p class="book-container__serious"><span>Серия </span>4 книги</p>
+                                        <p class="book-container__ildesc"><span>Иллюстрации</p>
+                                        <p class="book-container__ilauthor"><span>ЕВГЕНИЙ АНТОНЕНКОВ</p>
+                                        <p class="book-container__hoverdesc">Продолжение книги «Умная собачка Соня». Стихи и песни, которые маленькая собачка записывала в своем дневнике.</p>
+                                    </div>
+                                    <div class="book-container__desc__bottom">
+                                        <p class="book-container__madein"><span>ИЗДАНА В: </span>РОССИЯ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="book-container__name">СКАЗКИ ДЯДЮШКИ РИМУСА. ПРО МАЛЕНЬКИХ КРОЛЬЧАТ</p>
+                            <p class="book-container__author">ДЖОЭЛЬ ЧАНДЛЕР ХАРРИС</p>
+                            <p class="book-container__tags">СТИХИ, ПЕСНИ, РАССКАЗЫ, ИСТОРИЧЕСКИЙ, КЛАССИЧЕСКАЯ ЛИТЕРАТУРА</p>
+                            <a class="book-container__more" href="" data-index-books='book4'>ПОДРОБНЕЕ</a>
+                        </a>
+                    </div>
+                    <div class="book-container__item cart-author-book-container__item" data-index-books='book5'>
+                        <a href="">
+                            <div class="book-container__info">
+                                <img src="img/first_book.png" alt="" class="book-container__img" data-index-books='book5'>
+                                <div class="book-container__desc" data-index-books='book5'>
+                                    <div class="book-container__desc__top">
+                                        <p class="book-container__age">0+</p>
+                                        <p class="book-container__serious"><span>Серия </span>4 книги</p>
+                                        <p class="book-container__ildesc"><span>Иллюстрации</p>
+                                        <p class="book-container__ilauthor"><span>ЕВГЕНИЙ АНТОНЕНКОВ</p>
+                                        <p class="book-container__hoverdesc">Продолжение книги «Умная собачка Соня». Стихи и песни, которые маленькая собачка записывала в своем дневнике.</p>
+                                    </div>
+                                    <div class="book-container__desc__bottom">
+                                        <p class="book-container__madein"><span>ИЗДАНА В: </span>РОССИЯ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="book-container__name">СКАЗКИ ДЯДЮШКИ РИМУСА. ПРО МАЛЕНЬКИХ КРОЛЬЧАТ</p>
+                            <p class="book-container__author">ДЖОЭЛЬ ЧАНДЛЕР ХАРРИС</p>
+                            <p class="book-container__tags">СТИХИ, ПЕСНИ, РАССКАЗЫ, ИСТОРИЧЕСКИЙ, КЛАССИЧЕСКАЯ ЛИТЕРАТУРА</p>
+                            <a class="book-container__more" href="" data-index-books='book5'>ПОДРОБНЕЕ</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-author-tabs__item" data-category-tabs='illustrations'>
+                <h2 class="cart-author-tabs__header">ИЛЛЮСТРАЦИИ</h2> 
+                <div class="cart-author-tabs__il__container">
+                    <div class="cart-author-tabs__il__item">
+                        <img src="img/cart-il1.png" alt="" class="cart-author-tabs__il__img">
+                    </div>
+                    <div class="cart-author-tabs__il__item">
+                        <img src="img/cart-il2.png" alt="" class="cart-author-tabs__il__img">
+                    </div>
+                    <div class="cart-author-tabs__il__item">
+                        <img src="img/cart-il1.png" alt="" class="cart-author-tabs__il__img">
+                    </div>
+                    <div class="cart-author-tabs__il__item">
+                        <img src="img/cart-il2.png" alt="" class="cart-author-tabs__il__img">
+                    </div>
+                    <div class="cart-author-tabs__il__item">
+                        <img src="img/cart-il1.png" alt="" class="cart-author-tabs__il__img">
+                    </div>
+                    <div class="cart-author-tabs__il__item">
+                        <img src="img/cart-il2.png" alt="" class="cart-author-tabs__il__img">
+                    </div>
+                    <div class="cart-author-tabs__il__item">
+                        <img src="img/cart-il1.png" alt="" class="cart-author-tabs__il__img">
+                    </div>
+                    <div class="cart-author-tabs__il__item">
+                        <img src="img/cart-il2.png" alt="" class="cart-author-tabs__il__img">
+                    </div>
+                    <div class="cart-author-tabs__il__item">
+                        <img src="img/cart-il1.png" alt="" class="cart-author-tabs__il__img">
+                    </div>
+                    <div class="cart-author-tabs__il__item">
+                        <img src="img/cart-il2.png" alt="" class="cart-author-tabs__il__img">
+                    </div>
+                </div>
+            </div>
+            <div class="cart-author-tabs__item" data-category-tabs='biography'>
+                <h2 class="cart-author-tabs__header">БИОГРАФИЯ</h2> 
+                <p class="cart-author-tabs__biography__text">
+                    Харрис родился 9 декабря 1845 года (или 1848, как указывают некоторые источники) года в городе Итонтон штата Джорджия. Джозеф Эдисон Тёрнер, владелец плантации неподалеку от Итонтона, нанял 16-летнего Джоэля работать «мальчиком на посылках» для его газеты «Сельский житель». Четырехлетнее пребывание и работа в Тёрнволде, его первые шаги в стезе журналиста и литератора (1862-66) положили основание писательской деятельности Харриса. Он опубликовал для «Сельского жителя» не менее 30 стихотворений и обзоров, а также многочисленные юмористические заметки в рубрике «Деревенский насмешник».
+                    Свободное от газетной работы время Харрис с увлечением проводил в жилых кварталах рабов, населявших плантацию Тёрнволда. В дружеском общении с благодушными сельскими тружениками, он охотно впитывал их остроумные басни, живую диалектную речь и мелодику интонаций, которые позднее вдохновили его на свое самое славное творение – «Сказки дядюшки Римуса». Чернокожие дядюшка Джордж Террел, старик Харберт и тетушка Крисси стали прототипами дядюшки Римуса, матушки Мидоус и других героев афро-американских сказок про животных, которые Харрис начал писать лишь десятилетие спустя.
+                    Писатель изложил их с трепетной самоотдачей и кропотливым мастерством, когда уже основательно сложился как одаренный литератор и один из ведущих газетных хроникеров страны. Первая книга сказок о животных, вышедшая из печати в 1880 году, называлась «Дядюшка Римус, его песни и сказки» и сразу же стала любимицей читателей.
+                    Впоследствии Харрис выпустил серию сборников: «Вечера с дядюшкой Римусом», «Дядюшка Римус и его друзья», «Смоляное чучелко и другие стихи Дядюшки Римуса», «Рассказано дядюшкой Римусом: новые истории старой плантации», «Дядюшка Римус и Братец Кролик». Еще три книги были опубликованы уже после смерти автора и назывались «Дядюшка Римус и маленький мальчик», «Дядюша Римус возвращается», а также «Семь сказок дядюшки Римуса». Всего писатель создал 185 историй и снискал огромную популярность по всему миру. Его неподражаемо обаятельные персонажи и сегодня одни из самых любимых у детей и родителей в совместном семейночтении.
+                </p>
+            </div>
+            <div class="cart-author-tabs__item" data-category-tabs='awards'>
+                <h2 class="cart-author-tabs__header">НАГРАДЫ</h2> 
+                <p class="cart-author-tabs__biography__text cart-author-tabs__biography__text_first">
+                    Первая премия на «Всероссийском конкурсе молодых писателей для детей» за книгу стихов «Если бросить камень вверх» (1990);
+                </p>
+                <p class="cart-author-tabs__awards__text">
+                    Первая премия на «Всероссийском конкурсе молодых писателей для детей» за книгу стихов «Если бросить камень вверх» (1990);
+                </p>
+                <p class="cart-author-tabs__awards__text">
+                    Первая премия на «Всероссийском конкурсе молодых писателей для детей» за книгу стихов «Если бросить камень вверх» (1990);
+                </p>
+                <p class="cart-author-tabs__awards__text">
+                    Первая премия на «Всероссийском конкурсе молодых писателей для детей» за книгу стихов «Если бросить камень вверх» (1990);
+                </p>
+                <p class="cart-author-tabs__awards__text">
+                    Первая премия на «Всероссийском конкурсе молодых писателей для детей» за книгу стихов «Если бросить камень вверх» (1990);
+                </p>
+                <p class="cart-author-tabs__awards__text">
+                    Первая премия на «Всероссийском конкурсе молодых писателей для детей» за книгу стихов «Если бросить камень вверх» (1990);
+                </p>
+
+                <p class="cart-author-tabs__awards__text">
+                    Первая премия на «Всероссийском конкурсе молодых писателей для детей» за книгу стихов «Если бросить камень вверх» (1990);
+                </p>
+            </div>
+        </section>
+
+
+        <div class="gallery">
+            <div class="gallery-container">
+                <button class="gallery__btn gallery__left">
+                    <svg class="slick__left">
+                        <use xlink:href="img/sprite.svg#left__arrow" class="gallery__left__item"></use>
+                    </svg>
+                </button>
+                <img src="img/cart-il1.png" alt="" class="gallery__img">
+                <button class="gallery__btn gallery__right">
+                    <svg class="slick__right">
+                        <use xlink:href="img/sprite.svg#right__arrow" class="gallery__right__item"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+
+        <footer class="footer"> 
+            <div class="footer-container">
+                <div class="footer__top__menu">
+                    <a href="" class="footer__top__menu__item">Книги</a>
+                    <a href="" class="footer__top__menu__item">Авторы</a>
+                    <a href="" class="footer__top__menu__item">Иллюстраторы</a>
+                    <a href="" class="footer__top__menu__item">Партнеры</a>
+                </div>
+                <div class="footer__bottom__menu">
+                    <a href="" class="footer__bottom__menu__item">Агенство</a>
+                    <a href="" class="footer__bottom__menu__item">Новости<a>
+                    <a href="" class="footer__bottom__menu__item">Контакты</a>
+                </div>
+
+                <img src="img/lit_logo.svg" alt="" class="footer__logo">
+
+                <a href="" class="menu-mobile-main-href menu-mobile-main-href_ft">КНИГИ</a>
+                <a href="" class="menu-mobile-main-href menu-mobile-main-href_ft">АВТОРЫ</a>
+                <a href="" class="menu-mobile-main-href menu-mobile-main-href_ft">ИЛЛЮСТРАТОРЫ</a>
+                <a href="" class="menu-mobile-main-href menu-mobile-main-href_ft">ПАРТНЕРЫ</a>
+                <a href="" class="menu-mobile-secondary-href menu-mobile-secondary-href_first  menu-mobile-secondary-href_ft">АГЕНТСТВО</a>
+                <a href="" class="menu-mobile-secondary-href menu-mobile-secondary-href_ft">НОВОСТИ</a>
+                <a href="" class="menu-mobile-secondary-href menu-mobile-secondary-href_ft">КОНТАКТЫ</a>
+                <a href="" class="sign-in-mobile sign-in-mobile_footer">ВОЙТИ</a>
+                <div class="menu__language menu__language_mobile">
+                    <a href="" class="sign__in_button">ВОЙТИ</a>
+                    <a href="" class="language__switch"><img src="img/ru_lang.svg" alt=""></a>
+                    <a href="" class="language__switch"><img src="img/en_lang.svg" alt=""></a>
+                    <a href="" class="language__switch"><img src="img/ch_lang.svg" alt=""></a>
+                </div>
+                <div class="mobile-menu__social__media">
+                    <a href="">
+                        <svg class="contacts-info__icon contacts-info__icon_fb">
+                            <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg class="contacts-info__icon contacts-info__icon_inst">
+                            <use xlink:href="img/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="mobile-menu__social__email">
+                    <a href="">
+                        <svg class="footer__chat">
+                            <use xlink:href="img/sprite.svg#message"></use>
+                        </svg>
+                    </a>
+                </div>
+                <a href="mailto:ask@lit.agency" class="mobile-menu-email">ask@lit.agency</a>
+            </div>
+            <svg class="footer__chat footer__chat_bt">
+                <use xlink:href="img/sprite.svg#message"></use>
+            </svg>
+            <p class="footer_rights">© 2020 LIT.AGENCY</p>
+        </footer>
+
+    </div>
+
+    <script src="js/cart-author.js"></script>
+    <script src = "js/general.js"></script>
+
+</body>
+</html>
